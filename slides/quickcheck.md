@@ -357,6 +357,10 @@ data QueueF a k = Empty k
                 deriving (Functor)
 
 type Queue a r = Free (QueueF a) r
+
+add :: a -> Queue a ()
+add x = liftF $ Add x ()
+...
 ```
 
 # General points
@@ -507,9 +511,9 @@ addPeek y = monadicST $ do
 
 # Conclusion
 
-- Usually an interation of working on code, tests, and spec
-- Lots of fun
+- Usually interations of working on code, tests, and spec
 - Really builds confidence in both code and understanding
+- Lots of fun
 
 # Resources
 
