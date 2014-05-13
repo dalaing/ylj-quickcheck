@@ -511,7 +511,7 @@ addPeek y = monadicST $ do
 
 # Conclusion
 
-- Usually interations of working on code, tests, and spec
+- Usually iterations of working on code, tests, and spec
 - Really builds confidence in both code and understanding
 - Lots of fun
 
